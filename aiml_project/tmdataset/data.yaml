@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Vehicle_Detection_YOLOv8 - v3 2023-12-03']
+
+roboflow:
+  workspace: shailima
+  project: traffic-management-95q38
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/shailima/traffic-management-95q38/dataset/1

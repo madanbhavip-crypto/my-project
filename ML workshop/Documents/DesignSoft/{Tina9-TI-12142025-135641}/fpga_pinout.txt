@@ -1,0 +1,157 @@
+; You can modify/add components in this file
+; Restart TINA when modifying.
+; Do not put lines longer than 255 chars
+; Group with "pullup" will generate an additional "NET" line with "pullup"
+
+; Type XC2S100, package TQ144 
+DEVICE "TINALab Xilinx FPGA Dev. Kit"
+  GROUP "Slide switches" pullup
+   "Switch0:P11," &	
+   "Switch1:P12," &	
+   "Switch2:P13," &	
+   "Switch3:P19," &	
+   "Switch4:P23," &	
+   "Switch5:P22," &	
+   "Switch6:P21," &	
+   "Switch7:P20"	
+  END GROUP 
+  GROUP "User LED"
+   "Led0:P10," &
+   "Led1:P7,"&
+   "Led2:P6," &
+   "Led3:P5," &
+   "Led4:P4," &
+   "Led5:P3," &
+   "Led6:P141," &
+   "Led7:P140"	
+  END GROUP 
+  GROUP "Push buttons" pullup
+   "Push0:P139," &	
+   "Push1:P138," &	
+   "Push2:P137," &	
+   "Push3:P136"	
+  END GROUP  
+  GROUP "Clock sources"
+   "CLK:P88," &
+   "GCK3:P15,"  
+  END GROUP  
+  GROUP "7-segment LED display"
+   "Digit1:P51," &
+   "Digit2:P50," &
+   "Digit3:P48," &
+   "DISPA:P47," &	
+   "DISPB:P43," &
+   "DISPC:P41," &
+   "DISPD:P29," &	
+   "DISPE:P27," &	
+   "DISPF:P26," &	
+   "DISPG:P42,"&
+   "DISPDP:P40," &
+   "Digit4:P28"	
+  END GROUP 
+  GROUP "RS232 Serial Port" 
+   "RXD:P120," &	
+   "TXD:P122," &	
+   "CTS:P123," &	
+   "RTS:P121"	
+  END GROUP 
+  GROUP "VGA Display Port" 
+   "red0:P134," &      
+   "red1:P133," &      
+   "green0:P132," &    
+   "green1:P131," &    
+   "blue0:P130," &     
+   "blue1:P129," &     
+   "vsync:P124," &     
+   "hsync:P126"      
+  END GROUP 
+  GROUP "PS2 Mouse /Keyboard Port" 
+   "PS2Clk:P44," &
+   "PS2Data:P46"    
+  END GROUP 
+  GROUP "R/2R Ladder DAC"
+   "DAC0:P54," &	
+   "DAC1:P56," &	
+   "DAC2:P58," &	
+   "DAC3:P59"	
+  END GROUP 
+  GROUP "Generic Inputs" 
+   "DIn<0>:P86," &	
+   "DIn<1>:P87," &	
+   "DIn<2>:P84," &	
+   "DIn<3>:P85," &	
+   "DIn<4>:P80," &	
+   "DIn<5>:P83," &	
+   "DIn<6>:P78," &	
+   "DIn<7>:P79," &	
+   "DIn<8>:P76," &	
+   "DIn<9>:P77," &	
+   "DIn<10>:P74," &	
+   "DIn<11>:P75," &	
+   "DIn<12>:P65," &	
+   "DIn<13>:P66," &	
+   "DIn<14>:P60," &	
+   "DIn<15>:P64"	
+  END GROUP 
+  GROUP "Generic Outputs" 
+   "DOut<0>:P118," &
+   "DOut<1>:P117," &	
+   "DOut<2>:P116," &	
+   "DOut<3>:P115," &	
+   "DOut<4>:P114," &	
+   "DOut<5>:P113," &	
+   "DOut<6>:P112," &	
+   "DOut<7>:P103," &	
+   "DOut<8>:P102," &	
+   "DOut<9>:P101," &	
+   "DOut<10>:P100," &	
+   "DOut<11>:P99," &	
+   "DOut<12>:P96," &	
+   "DOut<13>:P95," &	
+   "DOut<14>:P94," &	
+   "DOut<15>:P93"	
+  END GROUP 
+END DEVICE
+
+; Type XC3S200, package FT256 
+DEVICE "Digilent Spartan-3 Starter Kit Board"
+  GROUP "Display digit enable signals"
+   "an<0>:E13,an<1>:F14,an<2>:G14,an<3>:D14"
+  END GROUP
+  GROUP "VGA Port"
+   "red:R12,grn:T12,blu:R11,hs:R9,vs:T10"
+  END GROUP
+  GROUP "Push Button Switches"
+   "btn<0>:M13,btn<1>:M14,btn<2>:L13,btn<3>:L14"
+  END GROUP
+  GROUP "PS/2 Port"
+   "kc:M16,kd:M15"
+  END GROUP
+  GROUP "LEDs"
+   "led<0>:K12,led<1>:P14,led<2>:L12,led<3>:N14,led<4>:P13,led<5>:N12,led<6>:P12,led<7>:P11"
+  END GROUP
+  GROUP "Clock"
+   "mclk:T9"
+  END GROUP
+  GROUP "Seven-Segment Display"
+   "ssg<0>:E14,ssg<1>:G13,ssg<2>:N15,ssg<3>:P15,ssg<4>:R16,ssg<5>:F13,ssg<6>:N16,ssg<7>:P16"
+  END GROUP
+  GROUP "Slide Switches"
+   "swt<0>:F12,swt<1>:G12,swt<2>:H14,swt<3>:H13,swt<4>:J14,swt<5>:J13,swt<6>:K14,swt<7>:K13"
+  END GROUP
+END DEVICE
+
+;Example for extending
+;Type XC2S15, package TQ144 
+;DEVICE "XC2S15-TQ144"
+;  GROUP "Generic Inputs"
+;	"IO_P10:P10," &
+;	"IO_P11:P11," &
+;	"IO_P12:P12," &
+;	"IO_P13:P13," &
+;	"IO_P19:P19," &
+;	"IO_P20:P20," &
+;	"IO_P21:P21," &
+;	"IO_P22:P22," 
+;  END GROUP
+;END DEVICE
